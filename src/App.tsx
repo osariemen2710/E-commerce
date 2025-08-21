@@ -39,9 +39,9 @@ const App: React.FC = () => {
   const addToCart = () => {
     if (quantity > 0) {
       setCartItems([{ ...product, quantity }]);
-      toast("Item added to cart ✅", {
+      toast("Item added to cart", {
         style: {
-          background: "#f97316", // Orange-500
+          background: "#f97316",
           color: "white",
         },
       });
@@ -164,7 +164,7 @@ const App: React.FC = () => {
                 onClick={() => setIsCartOpen(false)}
                 className="text-gray-500 hover:text-gray-700"
               >
-                ✖
+                <img src={close} alt="Close Cart" className="w-4 h-4" />
               </button>
             </div>
             <div className="p-4">
