@@ -218,28 +218,31 @@ const App: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Product Images */}
-          <div className="space-y-4 w-full w-96">
+          <div className="w-full max-w-[445px] space-y-6">
             <img
               src={productImages[selectedImage].src}
               alt={productImages[selectedImage].alt}
-              className="w-full h-[380px] rounded-xl object-contain" // ⬆ taller image
+              className="w-full rounded-xl"
             />
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 gap-6">
               {productImages.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
+                  className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
                     selectedImage === index
-                      ? "border-orange-500 ring-2 ring-orange-200"
-                      : "border-gray-200 hover:border-gray-300"
+                      ? "border-orange-500"
+                      : "border-transparent hover:border-gray-300"
                   }`}
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
+                  {selectedImage === index && (
+                    <div className="absolute inset-0 bg-white opacity-50"></div>
+                  )}
                 </button>
               ))}
             </div>
