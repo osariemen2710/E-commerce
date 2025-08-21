@@ -51,7 +51,58 @@ Serves the production build locally for previewing.
 
 *   [React](https://reactjs.org/)
 *   [Vite](https://vitejs.dev/)
-*   [TypeScript](https://www.typescriptlang.org/)
+*   [TypeScript](https://www.typescript.org/)
 *   [Tailwind CSS](https://tailwindcss.com/)
 *   [Lucide React](https://lucide.dev/guide/packages/lucide-react) for icons
 *   [Sonner](https://sonner.emilkowal.ski/) for notifications
+
+## Folder Structure
+```
+C:\Users\osari\altersc\ecommmerce\
+├───.gitignore
+├───eslint.config.js
+├───index.html
+├───package-lock.json
+├───package.json
+├───postcss.config.js
+├───README.md
+├───tailwind.config.js
+├───tsconfig.app.json
+├───tsconfig.json
+├───tsconfig.node.json
+├───vite.config.ts
+├───.git\...
+├───node_modules\...
+├───public\
+│   ├───favicon.png
+│   └───vite.svg
+└───src\
+    ├───App.css
+    ├───App.tsx
+    ├───index.css
+    ├───main.tsx
+    ├───vite-env.d.ts
+    ├───assets\
+    │   └───react.svg
+    └───images\
+        ├───favicon-32x32.png
+        ├───icon-cart.svg
+        ├───icon-close.svg
+        ├───icon-delete.svg
+        ├───icon-menu.svg
+        ├───icon-minus.svg
+        ├───icon-next.svg
+        ├───icon-plus.svg
+        ├───icon-previous.svg
+        ├───image-avatar.png
+        ├───image-product-1-thumbnail.jpg
+        ├───image-product-1.jpg
+        ├───image-product-2-thumbnail.jpg
+        ├───image-product-2.jpg
+        ├───image-product-3-thumbnail.jpg
+        ├───image-product-3.jpg
+        ├───image-product-4-thumbnail.jpg
+        ├───image-product-4.jpg
+        ├───image.png
+        └───logo.svg
+```
